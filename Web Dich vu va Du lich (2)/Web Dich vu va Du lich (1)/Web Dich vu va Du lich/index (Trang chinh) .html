@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin Du lịch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../../css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../../../js/index.js"></script>
+</head>
+<body>
+    <section id="title">
+
+        <div class="container-fluid">
+    
+          <!-- Nav Bar -->
+          <nav class="navbar navbar-expand-lg navbar-dark">
+    
+            <a class="navbar-brand" href="../../../admin/index.html">DaNaTour</a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    
+              <ul class="navbar-nav ml-auto" >
+                <li class="nav-item">
+                  <a class="nav-link" href="../../../admin/index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./../../../Đồ án WEB/locations.html">Du lịch</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="../../../Văn hóa địa phương (1)/index.html" >Văn hóa </a>
+                  <ul class="dropdown-menu">
+                    <li> <a onclick="scrollToSection('gioithieu')">Giới thiệu</a></li>
+                    <li>  <a onclick="scrollToSection('ditich')">Di tích lịch sử</a></li>
+                    <li> <a onclick="scrollToSection('lehoi')">Lễ hội</a></li>
+                    
+                          <li> <a onclick="scrollToSection('hoihoa')">Hội họa</a></li>
+                          <li> <a onclick="scrollToSection('dieukhac')">Điêu khắc</a></li>
+                          <li>  <a onclick="scrollToSection('amnhac')">Âm nhạc</a></li>
+                          <li>  <a onclick="scrollToSection('mua')">Múa</a></li>
+                        
+    
+                  </ul>
+                  
+                </li>
+               
+                 <li class="nav-item">
+                  <a class="nav-link" href="../Web Dich vu va Du lich/index (Trang chinh) ">Dịch vụ</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="../../../admin/contact.html">Liên Hệ</a>
+                </li>
+              </ul>
+              <div class="signup">
+                <a href="./../../../responsive-login-signin-signup/responsive-login-signin-signup/index.html">
+                <button style="font-size: 1.3rem; font-family: Montserrat-Light;  font-weight: bold;" >Đăng nhập</button>
+              </a>
+             </div>
+           
+    
+            </div>
+            
+          </nav>
+        </div>
+        
+              
+              </div>
+              
+        </section>
+    <div class="search-bar">
+        <input type="text" placeholder="Tìm kiếm dịch vụ..." id="searchInput">
+        <button onclick="searchServices()">Tìm kiếm</button>
+    </div>
+    <div class="container">
+        <section id="hotels" class="section">
+            <h2>KHÁCH SẠN, NHÀ NGHỈ, HOMESTAY.</h2>
+            <div class="card" onclick="openServiceDetail('hotel1')">
+                <img src="hotel1.jpg" alt="Khách sạn Mường Thanh">
+                <div class="card-content">
+                    <h3>Khách sạn Mường Thanh</h3>
+                    <p>Địa chỉ: Số 270, đường Võ Nguyên Giáp, phường Mỹ An, quận Ngũ Hành Sơn, thành phố Đà Nẵng, Việt Nam </p>
+                    <p>Số điện thoại: 0915957770</p>
+                    <a href="https://www.google.com/maps/place/270+V%C3%B5+Nguy%C3%AAn+Gi%C3%A1p,+Ph%C6%B0%E1%BB%9Bc+M%E1%BB%B9,+Ng%C5%A9+H%C3%A0nh+S%C6%A1n,+%C4%90%C3%A0+N%E1%BA%B5ng+50000,+Vi%E1%BB%87t+Nam/@16.0537018,108.2448343,17z/data=!3m1!4b1!4m6!3m5!1s0x314217e4b833f719:0xc91effd80e0ea323!8m2!3d16.0536967!4d108.2474092!16s%2Fg%2F11tggmgl8q?entry=ttu" class="btn" target="_blank">Xem trên bản đồ</a>
+                    <button class="btn" onclick="bookService('Khách sạn Mường Thanh')">Đặt phòng</button>
+                </div>
+            </div>
+            <div class="card" onclick="openServiceDetail('hotel2')">
+                <img src="hotel2.jpg" alt="Yarra Ocean Suites Danang">
+                <div class="card-content">
+                    <h3>Yarra Ocean Suites Danang</h3>
+                    <p>Địa chỉ: 304 Võ Nguyên Giáp, Bắc Mỹ An, Ngũ Hành Sơn, Đà Nẵng 50507, Việt Nam</p>
+                    <p>Số điện thoại: 0987 57839</p>
+                    <a href="https://www.google.com/maps/place/Yarra+Ocean+Suites+Danang/@16.0488602,108.2444307,17z/data=!4m19!1m8!2m7!1sHotels!3m5!2zMjcwIFbDtSBOZ3V5w6puIEdpw6Fw!3s0x314217e4b833f719:0xc91effd80e0ea323!4m2!1d108.2474092!2d16.0536967!3m9!1s0x31421738a38987cb:0x987cf70eea39eeda!5m2!4m1!1i2!8m2!3d16.0488602!4d108.2488081!15sCgZIb3RlbHOSAQVob3RlbOABAA!16s%2Fg%2F11kb1vgtvb?entry=ttu" class="btn" target="_blank">Xem trên bản đồ</a>
+                    <button class="btn" onclick="bookService('Yarra Ocean Suites Danang')">Đặt phòng</button>
+                </div>
+            </div>
+        </section>
+        <section id="car-rentals" class="section">
+            <h2>DỊCH VỤ THUÊ XE.</h2>
+            <div class="card" onclick="openServiceDetail('car-rental1')">
+                <img src="car-rental1.jpg" alt="Thuê Xe Tự Lái tại Đà Nẵng - Da Nang Travel Car">
+                <div class="card-content">
+                    <h3>Thuê Xe Tự Lái tại Đà Nẵng - Da Nang Travel Car</h3>
+                    <p>Địa chỉ: 10 Bùi Tá Hán, Đà Nẵng, Việt Nam</p>
+                    <p>Số điện thoại: 0321 654 987</p>
+                    <a href="https://www.google.com/maps/place/Thu%C3%AA+Xe+T%E1%BB%B1+L%C3%A1i+t%E1%BA%A1i+%C4%90%C3%A0+N%E1%BA%B5ng+-+Da+Nang+Travel+Car/@16.0317256,108.240831,17z/data=!4m10!1m2!2m1!1zVGh1w6ogeGUgxJDDoCBO4bq1bmcg!3m6!1s0x314217d8908ec0a3:0xc5b158a1589f84ac!8m2!3d16.0317256!4d108.2455946!15sChRUaHXDqiB4ZSDEkMOgIE7hurVuZ1oWIhR0aHXDqiB4ZSDEkcOgIG7hurVuZ5IBEWNhcl9yZW50YWxfYWdlbmN54AEA!16s%2Fg%2F11hd_dyfgy?entry=ttu" class="btn" target="_blank">Xem trên bản đồ</a>
+                    <button class="btn" onclick="bookService('Thuê Xe Tự Lái tại Đà Nẵng - Da Nang Travel Car')">Đặt xe</button>
+                </div>
+            </div>
+        </section>
+        <section id="tour-guides" class="section">
+            <h2>HƯỚNG DẪN VIÊN DU LỊCH.</h2>
+            <div class="card" onclick="openServiceDetail('tour-guide1')">
+                <img src="tour-guide1.jpg" alt="Hướng dẫn viên Home">
+                <div class="card-content">
+                    <h3>Hướng dẫn viên Home</h3>
+                    <p>Địa chỉ: 25 Nguyễn Văn Linh, Hải Châu, Đà Nẵng, Việt Nam</p>
+                    <p>Số điện thoại: 0789 456 123</p>
+                    <a href="https://www.google.com/maps/place/25+Nguy%E1%BB%85n+V%C4%83n+Linh,+Th%E1%BA%A1ch+Thang,+H%E1%BA%A3i+Ch%C3%A2u,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vi%E1%BB%87t+Nam/@16.0613274,108.2152391,17z/data=!4m19!1m12!3m11!1s0x314219c51ed2593f:0x4eac0f22a91cb3c4!2zMjUgTmd1eeG7hW4gVsSDbiBMaW5oLCBUaOG6pWNoIFRoYW5nLCBI4bqjaSBDaMOidSwgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaWV0IE5hbQ!3b1!8m2!3d16.0613274!4d108.2152391!15sChpOZ3Xhu4VuIFbEgW4gTGluaCBLxrAgIk5ndXnhu4VuIFbEgW4gTGluaCBaNiISbmctdWVuIHZvIG5nLWxpbmh6Qh0iHm5ndXnhu4VuIHZvIG5nLWxpbmggZG5nIG5nbjEWgAQA!16zL20vMDFiYWFu?entry=ttu" class="btn" target="_blank">Xem trên bản đồ</a>
+                    <button class="btn" onclick="bookService('Hướng dẫn viên Home')">Đặt hướng dẫn viên</button>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="section">
+            <h2>DỊCH VỤ HỖ TRỢ DU LỊCH KHÁC.</h2>
+            <div class="card" onclick="openServiceDetail('medical')">
+                <img src="medical.jpg" alt="Bệnh viện Đa Khoa Đà Nẵng">
+                <div class="card-content">
+                    <h3>Bệnh viện Đa Khoa Đà Nẵng</h3>
+                    <p>Bệnh viện ABC, Địa chỉ: 124 Hải Phòng, Thạch Thang, Hải Châu, Đà Nẵng 550000, Việt Nam</p>
+                    <p>Số điện thoại: 0456 789 012</p>
+                    <a href="https://www.google.com/maps/place/B%E1%BB%87nh+vi%E1%BB%87n+%C4%90%C3%A0+N%E1%BA%B5ng/@16.046638,108.1890957,13z/data=!4m10!1m2!2m1!1zQuG7hk5IIFZJ4buGTg!3m6!1s0x3142183647beb45b:0x2b7c055c22c6c77b!8m2!3d16.0723441!4d108.2156657!15sCg1C4buGTkggVknhu4ZOkgEQZ2VuZXJhbF9ob3NwaXRhbOABAA!16s%2Fm%2F0jkz8zw?entry=ttu" class="btn" target="_blank">Xem trên bản đồ</a>
+                </div>
+            </div>
+            <div class="card" onclick="openServiceDetail('bank')">
+                <img src="bank.jpg" alt="ATM Ngân hàng Quốc tế - VIB Cẩm Lệ">
+                <div class="card-content">
+                    <h3>Ngân hàng và ATM</h3>
+                    <p>ATM Ngân hàng Quốc tế - VIB Cẩm Lệ, Địa chỉ: 815 Nguyễn Hữu Thọ, Khuê Trung, Cẩm Lệ, Đà Nẵng 550000, Việt Nam</p>
+                    <p>Số điện thoại: 0678 123 456</p>
+                    <a href="https://www.google.com/maps/place/ATM+Ng%C3%A2n+h%C3%A0ng+Qu%E1%BB%91c+t%E1%BA%BF+-+VIB+C%E1%BA%A9m+L%E1%BB%87/@16.0725012,108.1744669,13z/data=!4m10!1m2!2m1!1zbmfDom4gaMOgbmc!3m6!1s0x314219b19de60ccf:0x442812027e5fe310!8m2!3d16.0233698!4d108.2097878!15sCgtuZ8OibiBow6BuZ5IBBGJhbmvgAQA!16s%2Fg%2F11srk9629c?entry=ttu" class="btn" target="_blank">Xem trên bản đồ</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="footer">
+                  <div class="footer-element-">
+                      <div class="footer-title">THEO DÕI CHÚNG TÔI TẠI</div>
+                      <div class="follow">
+                          
+                          <div><a class="facebook" href=""><i class="fa-brands fa-facebook"></i></a></div>
+                          <div><a class="twitter" href=""><i class="fa-brands fa-twitter"></i></a></div>
+                          <div><a class="youtube" href=""><i class="fa-brands fa-youtube"></i></a></div>
+                          <div><a class="thread" href=""><i class="fa-brands fa-square-threads"></i></a></div>
+                          
+                      </div>
+                <hr>
+                  </div>
+                  <div class="footer-content">
+                      <div class="footer-content-logo">
+                          <div><img class="logo- blink_me" src="../../../img/dn1.jpg"></div>
+                  <br>
+                  <div class="footer-title">LIÊN HỆ VỚI CHÚNG TÔI</div>
+                          
+                  <div><i class="fa-solid fa-location-dot"></i>   <a href="">470 Đ. Trần Đại Nghĩa, Khu đô thị, Ngũ Hành Sơn, Đà Nẵng</a></div>
+                          <div><i class="fa-solid fa-phone"></i>   <a href="">1900 000 </a></div>
+                          <div><i class="fa-solid fa-envelopes-bulk"></i>   <a href="">danatour@gmail.com</a></div>
+                      </div>
+                      <div class="footer-element">
+                          <div class="footer-title">VỀ CHÚNG TÔI</div>
+                          
+                          <div><a href="">Trang chủ</a></div>
+                          <div><a href="">Du lịch</a></div>
+                          <div><a href="">Văn hóa</a></div>
+                          <div><a href="">Ẩm thực</a></div>
+                          <div><a href="">Dịch vụ</a></div>
+                          <div><a href="">Liên hệ</a></div>
+                      </div>
+                      <div class="footer-element">
+                          <div class="footer-title">HỖ TRỢ KHÁCH HÀNG</div>
+                          
+                          <div><a href="">Tìm kiếm</a></div>
+                          <div><a href="">Câu hỏi thường gặp</a></div>
+                          
+                      </div>
+                      <div class="footer-element">
+                          <div class="footer-title">Đăng ký nhận bản tin! </div>
+                          
+                          
+                  <div class = "subscribe-form footer-item">
+                  
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Email" class = "form-control"> <br>
+                        <input type = "submit" class = "btn" value = "Subscribe">
+                    </form>
+                </div>
+                      </div>
+                      
+                  </div>	
+              </div>
+              
+          
+            </footer>
+          
+          </section>
+    </div>
+
+    <!-- Modal chi tiết dịch vụ -->
+    <div id="serviceDetailModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Modal đặt dịch vụ -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Đặt dịch vụ</h2>
+            <form id="bookingForm">
+                <label for="serviceName">Tên dịch vụ</label>
+                <input type="text" id="serviceName" name="serviceName" readonly>
+                
+                <label for="customerName">Họ và tên</label>
+                <input type="text" id="customerName" name="customerName" required>
+                
+                <label for="customerPhone">Số điện thoại</label>
+                <input type="text" id="customerPhone" name="customerPhone" required>
+                
+                <label for="customerEmail">Email</label>
+                <input type="email" id="customerEmail" name="customerEmail" required>
+                
+                <label for="bookingDate">Ngày đặt</label>
+                <input type="date" id="bookingDate" name="bookingDate" required>
+                
+                <button type="submit">Xác nhận</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openServiceDetail(serviceId) {
+            const modal = document.getElementById('serviceDetailModal');
+            const content = document.getElementById('modalContent');
+            // Load service details dynamically based on serviceId
+            // For simplicity, we're just showing a static message here
+            content.innerHTML = '<p>Chi tiết dịch vụ: Khách sạn  là một lựa chọn lý tưởng cho du khách muốn tận hưởng kỳ nghỉ tại Đà Nẵng với sự tiện nghi và dịch vụ đẳng cấp. Với vị trí thuận lợi, cơ sở vật chất hiện đại và các dịch vụ phong phú, khách sạn chắc chắn sẽ mang đến cho du khách một trải nghiệm lưu trú đáng nhớ.' +'</p>' ;
+            modal.style.display = 'block';
+        }
+
+        function bookService(serviceName) {
+            const modal = document.getElementById('bookingModal');
+            const serviceNameInput = document.getElementById('serviceName');
+            serviceNameInput.value = serviceName;
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('serviceDetailModal').style.display = 'none';
+            document.getElementById('bookingModal').style.display = 'none';
+        }
+
+        function searchServices() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                if (title.includes(input)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const serviceDetailModal = document.getElementById('serviceDetailModal');
+            const bookingModal = document.getElementById('bookingModal');
+            if (event.target == serviceDetailModal || event.target == bookingModal) {
+                serviceDetailModal.style.display = 'none';
+                bookingModal.style.display = 'none';
+            }
+        }
+
+        // Handle form submission
+        document.getElementById('bookingForm').onsubmit = function(event) {
+            event.preventDefault();
+            // Handle booking form submission logic here
+            alert('Đặt dịch vụ thành công!');
+            closeModal();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Danatour</title>
+
+  
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+  
+<body>
+  <!-- <div class="loader">
+    <img src="./images/preloader.gif" alt="" />
+  </div> -->
+ <!-- <button id="myBtn" title="Lên đầu trang"><img src="img/backtotop.png" title='lên đầu trang' width='50px'/></button> -->
+  <section id="title">
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="./index.html">DaNaTour</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto" >
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./../Đồ án WEB/locations.html">Du lịch</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../Văn hóa địa phương (1)/index.html">Văn hóa </a>
+              <ul class="dropdown-menu">
+                <li> <a onclick="scrollToSection('gioithieu')">Giới thiệu</a></li>
+                <li>  <a onclick="scrollToSection('ditich')">Di tích lịch sử</a></li>
+                <li> <a onclick="scrollToSection('lehoi')">Lễ hội</a></li>
+                
+                      <li> <a onclick="scrollToSection('hoihoa')">Hội họa</a></li>
+                      <li> <a onclick="scrollToSection('dieukhac')">Điêu khắc</a></li>
+                      <li>  <a onclick="scrollToSection('amnhac')">Âm nhạc</a></li>
+                      <li>  <a onclick="scrollToSection('mua')">Múa</a></li>
+                    
+
+              </ul>
+              
+            </li>
+           
+			 <li class="nav-item">
+              <a class="nav-link" href="../Web Dich vu va Du lich (2)/Web Dich vu va Du lich (1)/Web Dich vu va Du lich/index (Trang chinh) .html">Dịch vụ</a>
+            </li> 
+			<li class="nav-item">
+              <a class="nav-link" href="../admin/contact.html">Liên Hệ</a>
+            </li>
+          </ul>
+          <div class="signup">
+            <a href="./../responsive-login-signin-signup/responsive-login-signin-signup/index.html">
+            <button style="font-size: 1.3rem; font-family: Montserrat-Light;  font-weight: bold;" >Đăng nhập</button>
+          </a>
+         </div>
+       
+
+        </div>
+        
+      </nav>
+    </div>
+    
+          
+          </div>
+          
+    </section>
+  <section id="testimonial">
+      <div id="testimonial-carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <img class="testimonial-image" src="../img/đ.jpg" alt="p1" height="600px" width="80%">
+   
+          </div>
+          <div class="carousel-item container-fluid">
+            <img class="testimonial-image" src="../img/ba.jpg" alt="p2" height="600px" width="80%">
+          </div>
+      <div class="carousel-item container-fluid">
+            <img class="testimonial-image" src="../img/cau-rong-da-nang-nemtv-16.jpg" alt="p3" height="600px" width="80%">
+          </div>
+          <div class="carousel-item container-fluid">
+            <img class="testimonial-image" src="../img/mykhe.jpg" alt="p4" height="600px" width="80%">
+          </div>
+          <div class="carousel-item container-fluid">
+            <img class="testimonial-image" src="../img/deo-hai-van.jpg" alt="p5" height="600px" width="80%">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+        </a>
+        
+      </div>
+      <!-- <div class="carousel-caption">
+        <h1>Khám phá  <br><span>Trải nghiệm</span><br>Du lịch</h1>
+        <p class="par">Địa điểm du lich chúng tôi là nơi tốt nhất được lựa chọn từ thiên nhiên
+            <br> chúng tôi có các loại phương tiện như xe big, máy bay  
+            <br> và chúng tôi hứa sẽ mang lại trải nghiệm tốt.</p>
+            <button class="cn" onclick="goToLink()">THAM GIA</button>
+    </div> -->
+    <!-- <div class="marquee-container">
+      <marquee direction="left" height="100px" style="background-color: rgba(247, 203, 203, 0.3); color: rgb(119, 119, 76); font-size: 50px;">
+          Bộ y tế đề nghị người dân đeo khẩu trang khi đi ra ngoài và không tụ tập nơi đông người. Hãy cùng nhau chung tay chống dịch. Chúng tôi sẽ chờ các bạn sau khi hết dịch. Việt Nam cố lên <i class="fas fa-heartbeat" style="color: red;"></i>.
+      </marquee>
+  </div> -->
+  </section>
+
+  <section id="rooms">
+  <h1>Đến Đà Nẵng Chơi Gì ? </h1>
+  <hr>
+  <br>
+  <br>
+    <div class="row">
+      <div class="rooms-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+      
+	      <!-- <img class="rooms-image" src="../img/snn.webp" alt="p1" height="200px" width="300px"> -->
+        <iframe class="rooms-image"  src="https://www.youtube.com/embed/Tog5bmzGxDY?si=OJqAqIPUAOWc5rJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+	     <h2>ASIAN PART - Công Viên Châu Á</h2>
+       <p  style="font-size: 20px; color: rgb(212, 22, 22);">Giá chỉ từ: 100,000 đồng/vé
+      </p>
+      <a href=""><button style="font-size: 1.3rem; font-family: Montserrat-Light;  font-weight: bold;" >Đặt vé</button></a>
+          </div>
+        </div>
+      </div>
+
+        <div class="rooms-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+      
+	      <!-- <img class="rooms-image" src="../img/dânng.jpg" alt="p1" height="200px" width="300px"> -->
+        <iframe class="rooms-image"  src="https://www.youtube.com/embed/EA5S4EilDFk?si=2uAORuHBHLSfmpgT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+	     <h2>Công Viên Suối Khoáng Nóng Núi Thần Tài</h2>
+       <p  style="font-size: 20px; color: rgb(212, 22, 22);">Giá chỉ từ: 340,000 đồng/vé
+      </p>
+      <a href=""><button style="font-size: 1.3rem; font-family: Montserrat-Light;  font-weight: bold;" >Đặt vé</button></a>
+      
+          </div>
+        </div>
+      </div>
+	  
+	     <div class="rooms-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+      
+	      <!-- <img class="rooms-image" src="../img/dalat.jpg" alt="p1" height="200px" width="300px"> -->
+        <iframe class="rooms-image"  src="https://www.youtube.com/embed/NB3UsxaSmQw?si=v-r_FGMWp-zQIthT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+	     <h2>Trải Nghiệm Bay Dù Lượn ở Bán Đảo Sơn Trà Đà Nẵng</h2>
+		 <p  style="font-size: 20px; color: rgb(212, 22, 22);">Giá chỉ từ: 340,000 đồng/vé
+     </p>
+     <a href=""><button style="font-size: 1.3rem; font-family: Montserrat-Light;  font-weight: bold;" >Đặt vé</button></a>
+          </div>
+        </div>
+      </div>
+	  
+    </div>
+    </section>
+
+    <section id="amenties">
+  <div>
+    <h1 style="  text-align: center;">VÒNG XOAY MAY MẮN </h1>
+    <hr>
+
+
+    <h3 style="  text-align: center;">“Hãy đăng ký để nhận những phần quà hấp dẫn nhé !”</h3>
+
+    <p style="  text-align: center;">Hãy nhấn vào nút SPIN</p>
+    <br>
+    <br>
+    </div>
+
+
+    <div>
+    <div class="mainbox" id="mainbox" >
+      <div class="box" id="box">
+        <div class="box1">
+          <span class="font span1"><b>1 iphone 15promax</b></span>
+          <span class="font span2"><b>Giảm 5% <br> đặt Hotel</b></span>
+          <span class="font span3"><b>Voucher <br> Giảm 20%</b></span>
+          <span class="font span4"><b>1 áo du lịch</b></span>
+          <span class="font span5"
+            ><b
+            >1 balo  <br />
+            du lịch</b
+            ></span
+          >
+        </div>
+        <div class="box2">
+          <span class="font span1"><b>Voucher <br> Giảm 20%</b></span>
+          <span class="font span2"
+            ><b
+              >Voucher 20% <br />
+              vé Asian-park</b
+            ></span
+          >
+          <span class="font span3"><b>1 ipad</b></span>
+          <span class="font span4"><b>1 ô tô VF9</b></span>
+          <span class="font span5"
+            ><b
+              >Voucher<br />
+              Giảm 10%</b
+            ></span
+          >
+        </div>
+      </div>
+      <button class="spin" onclick="spin()">SPIN</button>
+    </div>
+    <audio
+      controls="controls"
+      id="applause"
+      src="./applause.mp3"
+      type="audio/mp3"
+    ></audio>
+    <audio
+      controls="controls"
+      id="wheel"
+      src="./wheel.mp3"
+      type="audio/mp3"
+    ></audio>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./script.js"></script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+</div>
+<!-- <div class="row ">
+  
+<div class="amenties-gap ">
+<img class="amenties-image" src="../img/phaohoa.jpg" alt="p1" height="200px" width="300px"><br><br>
+<p>Lễ Hội Pháo Hoa Quốc Tế tại Đà Nẵng</p>
+</div>
+<div class="amenties-gap">
+<img class="amenties-image" src="../img/le-hoi-dieu-dubai-4.jpg" alt="p1" height="200px" width="300px"> <br><br>
+<p>Liên hoan diều Bình Định mùa hè 2024</p>
+</div>
+<div  class="amenties-gap">
+<img class="amenties-image" src="../img/á.webp" alt="p1" height="200px" width="300px"> <br><br>
+<p>Lễ hội Vịnh ánh sáng quốc tế Nha Trang</p>
+</div>
+
+
+
+<div class="amenties-gap">
+<img class="amenties-image" src="../img/denhung.jpg" alt="p1" height="200px" width="300px"> <br><br>
+<p>Lễ hội đền hùng diễn ra vào 10/3 âm lịch </p>
+</div>
+<div class="amenties-gap">
+<img class="amenties-image" src="../img/chuahuong.jpg" alt="p1" height="200px" width="300px"> <br> <br>
+<p>Lễ hội chùa Hương vào tháng 1 ở Hà Nội</p>
+</div>
+<div class="amenties-gap" >
+<img class="amenties-image" src="../img/congchien.jpg" alt="p1" height="200px" width="300px"> <br><br>
+<p>Lễ hội Cồng chiên diễn ra Tây Nguyên</p>
+</div>
+
+</div> -->
+ </section>
+<section id="about">
+  <div id="gallery" class="gallery">
+    <div class="container">
+        <div class="gallery-details">
+            <div class="gallary-header text-center">
+                <h1><b>
+                    Những sự kiện hot nhất sắp diễn ra</b>
+                </h1>
+                <p>
+                    Khám phá những điểm nổi bật của du lịch Đà Nẵng vào màu hè này nhé!
+                </p>
+            </div>
+            <div class="gallery-box">
+                <div class="gallery-content">
+                    <div class="filtr-container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="filtr-item">
+                                    <a href="https://diff.vn/">
+                                        <img alt="sao khong thấy" src="./../img/pha.jpg" />
+                                        <div class="item-title" style="background-color: rgb(54, 58, 57,.5);text-align: center;">
+                                            <br>Lễ hội pháo hoa quốc tế Đà Nẵng<br>8/6 – 13/7/2024</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="filtr-item">
+                                    <a href="https://vov.vn/du-lich/khai-mac-le-hoi-tan-huong-mua-he-da-nang-2023-post1035790.vov">
+                                        <img src="https://image.baophapluat.vn/1200x630/Uploaded/2024/dcdivivp/2023_07_29/z4556649817462-5ccd727623c79740cfe6ef21baa339a2-8678.jpg" />
+                                        <div class="item-title" style="background-color: rgb(54, 58, 57,.5);text-align: center;">
+                                            <br>Lễ hội Tận hưởng mùa hè huyện Hoà Vang<br>Dự kiến tháng 6/2024
+                                          </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="filtr-item">
+                                    <a href="https://viettimes.vn/anh-nguoi-dan-du-khach-thich-thu-check-in-khong-gian-anh-sang-viet-nhat-tai-da-nang-post168306.html">
+                                        <img src="https://image.viettimes.vn/w800/Uploaded/2024/ebhuthp/2023_07_12/vt-khong-gian-anh-sang-viet-nhat-12-7554.png" />
+                                        <div class="item-title" style="background-color: rgb(54, 58, 57,.5);text-align: center;">
+                                            <br> Lễ hội Việt Nam – Nhật Bản <br>04/7 – 07/7/2024</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="filtr-item">
+                                    <a href="https://danangfantasticity.com/tin-tuc/da-nang-khai-mac-le-hoi-tan-huong-mua-he-2023-enjoy-danang-2023.html">
+                                        <img src="https://ngochuong.vn/upload/image/data/Nhung/Linh-tinh/cong-vien-chau-a-tai-xuat-sau-4-thang-tam-dung-hoat-dong-02-f6e.jpg" />
+                                        <div class="item-title" style="background-color: rgb(54, 58, 57,.5);text-align: center;">
+                                            <br> Lễ hội Tận hưởng Đà Nẵng<br>(Dự kiến 17/7 – 21/7/2024)</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="filtr-item">
+                                    <a href="https://irace.vn/su-kien/vnexpress-marathon-da-nang-midnight/">
+                                        <img src="https://vcdn1-thethao.vnecdn.net/2024/01/04/329736353-1834578970252740-891-3864-1408-1704338957.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=_GJRyua_7S_uyi65Ru9dYA" />
+                                        <div class="item-title" style="background-color: rgb(54, 58, 57,.5);text-align: center;">
+                                            <br>Giải VnExpress Marathon Da Nang Midnigh<br>13-14/7/2024</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="filtr-item">
+                                    <a href="https://baoquangnam.vn/le-hoi-viet-nam-asean-se-lan-dau-to-chuc-o-da-nang-3132442.html#:~:text=%C4%90%C3%A0%20N%E1%BA%B5ng%20v%E1%BB%ABa%20th%E1%BB%91ng%20nh%E1%BA%A5t,ASEAN%20v%C3%A0o%20th%C3%A1ng%208%2F2024.&text=Theo%20%C4%91%C3%B3%2C%20l%E1%BB%85%20h%E1%BB%99i%20Vi%E1%BB%87t,t%E1%BB%95%20ch%E1%BB%A9c%20t%E1%BA%A1i%20%C4%90%C3%A0%20N%E1%BA%B5ng.">
+                                        <img src="https://static.kinhtedothi.vn/images/upload/2021/12/23/asia3.jpg" />
+                                        <div class="item-title" style="background-color: rgb(54, 58, 57,.5);text-align: center;">
+                                            <br>Lễ hội Việt Nam – Asian<br>3 – 4/8/2024</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="filtr-item">
+                                    <a href="https://banahills.sunworld.vn/tin-tuc/kham-pha-le-hoi-am-thuc-va-bia-bestival-2023-cuoc-vui-khong-khoang-cach.html">
+                                        <img src="https://banahills.sunworld.vn/wp-content/uploads/2023/05/AFS06411-scaled.jpg" />
+                                        <div class="item-title" style="background-color: rgb(54, 58, 57,.5);text-align: center;">
+                                            <br>Lễ hội mùa hè, Lễ hội Bia và Bà Nà Food Tour<br>30/4 – 30/8</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<!--End Khám phá-->
+</section>
+<section id="contact">
+  <div class="footer">
+		<div class="footer-element-">
+			<div class="footer-title">THEO DÕI CHÚNG TÔI TẠI</div>
+			<div class="follow">
+				
+				<div><a class="facebook" href=""><i class="fa-brands fa-facebook"></i></a></div>
+			    <div><a class="twitter" href=""><i class="fa-brands fa-twitter"></i></a></div>
+			    <div><a class="youtube" href=""><i class="fa-brands fa-youtube"></i></a></div>
+				<div><a class="thread" href=""><i class="fa-brands fa-square-threads"></i></a></div>
+				
+			</div>
+      <hr>
+		</div>
+		<div class="footer-content">
+			<div class="footer-content-logo">
+				<div><img class="logo- blink_me" src="../img/dn1.jpg"></div>
+        <br>
+        <div class="footer-title">LIÊN HỆ VỚI CHÚNG TÔI</div>
+				
+        <div><i class="fa-solid fa-location-dot"></i>   <a href="">470 Đ. Trần Đại Nghĩa, Khu đô thị, Ngũ Hành Sơn, Đà Nẵng</a></div>
+				<div><i class="fa-solid fa-phone"></i>   <a href="">1900 000 </a></div>
+				<div><i class="fa-solid fa-envelopes-bulk"></i>   <a href="">danatour@gmail.com</a></div>
+			</div>
+			<div class="footer-element">
+				<div class="footer-title">VỀ CHÚNG TÔI</div>
+				
+				<div><a href="">Trang chủ</a></div>
+				<div><a href="">Du lịch</a></div>
+				<div><a href="">Văn hóa</a></div>
+				<div><a href="">Ẩm thực</a></div>
+				<div><a href="">Dịch vụ</a></div>
+				<div><a href="">Liên hệ</a></div>
+			</div>
+			<div class="footer-element">
+				<div class="footer-title">HỖ TRỢ KHÁCH HÀNG</div>
+				
+				<div><a href="">Tìm kiếm</a></div>
+				<div><a href="">Câu hỏi thường gặp</a></div>
+				
+			</div>
+			<div class="footer-element">
+				<div class="footer-title">Đăng ký nhận bản tin! </div>
+				
+				
+        <div class = "subscribe-form footer-item">
+        
+          <form class = "flex">
+              <input type = "email" placeholder="Enter Email" class = "form-control"> <br>
+              <input type = "submit" class = "btn" value = "Subscribe">
+          </form>
+      </div>
+			</div>
+			
+		</div>	
+	</div>
+    
+
+  </footer>
+
+</section>
+
+<!-- quảng cáo -->
+  <div id="ads_right">
+    
+      <div id="exitads">
+        <a href="#" onclick="hideads()">Tắt quảng cáo[❌]</a>
+      </div>
+      <div id="content_ads">
+        <a href="https://tuyensinh.vku.udn.vn/" target="_blank"><img src="../img/ts1.jpg" width="1200px" height="200px"></a>
+      </div>
+  </div>
+  
+</body>
+
+
+</html>

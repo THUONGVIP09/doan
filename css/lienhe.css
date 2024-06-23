@@ -1,0 +1,178 @@
+iframe{
+	width: 1500px;
+	height: 500px;
+	border: 0;
+	border-radius: 20px;
+	margin-top: 10px;
+	max-width: 100%;
+}
+@media (max-width: 768px) {
+    iframe {
+      height: 200px; /* Điều chỉnh chiều cao cho màn hình nhỏ hơn */
+    }}
+.place{
+	color: red;
+}
+
+.call{
+	color: #3366CC;
+}
+
+.email{
+	color: #FF9999;
+}
+
+
+
+
+.card-title{
+	color: #000000;
+	font-size: 15px;
+	margin-left: 20px;
+	font-family: Roboto;
+	font-weight: bold;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.card-content{
+	margin-left: 20px;
+	font-size: 15px;
+}
+
+.card{
+	margin-top: 50px;
+	margin-left: 20px;
+	max-width: 100%;
+    height: auto;
+}
+
+.card-1{
+	display: flex;
+	max-width: 100%;
+    height: auto;
+}
+
+.card-1 div {
+	padding-right: 10px;
+	max-width: 100%;
+	height: auto;
+}
+
+.social{
+	display: flex;
+	padding-bottom: 40px;
+    justify-content: center;
+}
+
+.social div i{
+	font-size: 30px;
+}
+
+.social div{
+	margin-right: 20px;
+}
+
+.facebook{
+	color: #0066FF;
+}
+
+.twitter{
+	color: #1DA1F2;
+}
+
+.threads{
+	color: black;
+}
+
+.youtube{
+	color: red;
+}
+
+input{
+	width: 200px;
+	height: 40px;
+	border-radius: 20px;
+	border:none;
+	background-color: #EEEEEE;
+	font-size: 15px;
+	margin-bottom: 30px;
+	max-width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-2{
+	border-radius: 20px;
+	width: 440px;
+	height: 200px;
+	font-family: Roboto;
+	border: none;
+	background-color: #EEEEEE;
+}
+
+.card-2-1{
+	color: #888888;
+	margin-left: 15px;
+	margin-top: 5px;
+	padding-top: 10px;
+}
+
+.card-title{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Roboto;
+	padding-bottom: 30px;
+	max-width: 100%;
+    height: auto;
+}
+
+.card-3{
+	margin-top: 20px;
+}
+
+.gio{
+	display: flex;
+	justify-content: space-between;
+}
+
+.gio-1{
+	margin-left: 20px;
+}
+
+.gio-2{
+	margin-right: 50px;
+}
+
+button{
+	border-radius: 20px;
+	background: linear-gradient(45deg, #66CC00, #FF9966);
+	color: white;
+	border: 1px solid gray;
+	width: 150px;
+	height: 40px;
+	max-width: 100%;
+    height: auto;
+   
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%; 
+        margin: auto;
+    }
+    
+    .card {
+        margin-left: 0;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+
+    button {
+        width: 120px;
+    }
+}

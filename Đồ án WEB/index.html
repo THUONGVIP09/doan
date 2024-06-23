@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Danh Sách Địa Điểm</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Đồ án WEB/css1.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+		<div class="container d-flex justify-content-between align-items-center">
+			<div class="logo">
+				<h1>DU LỊCH ĐÀ NẴNG</h1>
+			</div>
+			<nav>
+				<ul class="nav">
+					<li class="nav-item"><a class="nav-link text-white" href="index.html">Trang Chủ</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="locations.html">Địa Điểm</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="local-information.html">Thông Tin Địa Phương</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Liên Hệ</a></li>
+				</ul>
+			</nav>
+			</div>
+			</header>
+
+    <!-- Hero Section -->
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Khám Phá Các Địa Điểm Tuyệt Vời</h1>
+            <p class="lead" style="font-family:arizonia"> <b>"Đi du lịch là cách tiêu tiền duy nhất khiến bạn trở nên giàu có"</b></p>
+        </div>
+    </section>
+
+    <!-- Giới Thiệu Ngắn Gọn -->
+    <section class="container my-5">
+        <h2>Giới Thiệu</h2>
+        <p>Trang web của chúng tôi giới thiệu các địa điểm đẹp và nổi bật nhất, giúp bạn khám phá và lên kế hoạch cho những chuyến đi đáng nhớ.</p>
+    </section>
+
+    <!-- Nổi Bật -->
+    <section class="container my-5">
+        <h2>Địa Điểm Nổi Bật</h2>
+        <div class="highlight-list">
+            <div class="highlight-item">
+                <img src="Bà nà hills.jpg" alt="Địa điểm 1">
+                <h3>Bà Nà Hills</h3>
+                <p>Địa chỉ: Hòa Phú, Huyện Hòa Vang, Đà Nẵng
+					<br/>Có thể nói, Đà Nẵng trở nên nổi tiếng hơn kể từ khi có sự xuất hiện của Sunworld Bà Nà Hills – được mệnh danh là “Đường lên tiên cảnh” vào năm 2009. Sở hữu không gian đầy lãng mạn cùng với tổ hợp các công trình kiến trúc, giải trí độc đáo Bà Nà Hill đã dần tạo được ấn tượng tốt và mang đến cho Đà Nẵng danh hiệu “Khu du lịch hàng đầu Việt Nam” kể từ năm 2014 cho đến nay. Chuyên mục ngày hôm nay chính là Giới thiệu về Bà Nà Hills Đà Nẵng để du khách khi đến đây có thể hiểu rõ và sâu hơn về lịch sử, quá trình phát triển cũng như những điều thú vị xung quanh Bà Nà – nơi được mệnh danh là “Sapa của miền Trung” này.</p>
+            </div>
+            <div class="highlight-item">
+                <img src="bãi biển mỹ khê.jpg" alt="Địa điểm 2">
+                <h3>Bãi biển Mỹ Khê</h3>
+                <p>Địa chỉ: đường Võ Nguyên Giáp, T20, phường Phước Mỹ, quận Sơn Trà, Đà Nẵng
+<br/>Một trong những địa điểm du lịch Đà Nẵng nổi tiếng nhất là bãi biển Mỹ Khê – lọt top 6 bãi biển quyến rũ nhất hành tinh. Với ưu thế là đường bãi biển dài đến 1km, đặc điểm bờ cát thoải, màu cát vàng và mịn, nước biển xanh trong in bóng mây trời, biển Mỹ Khê ở Đà Nẵng rất thích hợp để tắm biển, chơi các môn thể thao trên biển và nghỉ dưỡng</p>
+            </div>
+            <div class="highlight-item">
+                <img src="đèo hải vân.jpg" alt="Địa điểm 3">
+                <h3>Đèo Hải Vân</h3>
+                <p>Địa chỉ: Hoà Hiệp Bắc, Liên Chiểu, Đà Nẵng, Việt Nam
+<br/>Rất ít người biết rằng đèo Hải Vân cũng là một trong các danh lam thắng cảnh ở Đà Nẵng vô cùng. Vốn được mệnh danh là thiên hạ đệ nhất hùng quan, đèo Hải Vân dài tới 21km rất thích hợp để bạn chinh phục ngắm cảnh núi ngon hùng vĩ. Đây cũng là địa điểm cắm trại đẹp được nhiều nhóm bạn lựa chọn.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Liên Hệ -->
+    <section class="container my-5">
+        <h2>Liên Hệ</h2>
+        <form action="#">
+            <label for="name">Tên:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Tin nhắn:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Gửi</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: info@example.com</p>
+            <p>Điện thoại: +123 456 789</p>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+        <p>&copy; 2024 Danh Sách Địa Điểm. All rights reserved.</p>
+			</div>
+    </footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

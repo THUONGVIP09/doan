@@ -1,0 +1,46 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+header {
+    text-align: center;
+    padding: 1rem 0;
+    background: #3EAEF4;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: justify;
+}
+.container h2 {
+    font-family: 'Montserrat', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: blue;
+}
+.container p {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2rem;
+}
+.container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}

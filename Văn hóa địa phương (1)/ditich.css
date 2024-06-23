@@ -1,0 +1,159 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+header {
+    text-align: center;
+    padding: 1rem 0;
+    background: #3EAEF4;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: justify;
+}
+.container h2 {
+    font-family: 'Montserrat', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: blue;
+}
+.container p {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2rem;
+    text-align: justify; 
+}
+.container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.col-md-3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Căn giữa form */
+#bookingForm {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.image-container {
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-overlay p {
+    margin: 0;
+}
+
+.image-container:hover .image-overlay {
+    opacity: 1;
+}
+#booking-section {
+    background-image: url('vanhoadiaphuong.files/banahills.jpg'); /* Đường dẫn đến ảnh nền */
+    background-size: cover; /* Phủ toàn bộ khu vực */
+    background-position: center; /* Canh giữa */
+    color: white; /* Màu chữ trắng để phù hợp với ảnh nền */
+    padding: 4rem 0; /* Khoảng cách giữa nội dung và ảnh nền */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+#booking-section .container {
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền với độ mờ */
+    padding: 2rem; /* Khoảng cách giữa nội dung và khung form */
+    border-radius: 10px; /* Bo tròn góc khung */
+}
+
+#booking-section h2 {
+    margin-bottom: 2rem; /* Khoảng cách giữa tiêu đề và form */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Đổ bóng cho tiêu đề */
+}
+
+#booking-section label {
+    color: white; /* Màu chữ trắng cho các nhãn */
+}
+
+#booking-section input[type="text"],
+#booking-section input[type="date"],
+#booking-section input[type="time"],
+#booking-section input[type="number"],
+#booking-section button {
+    background-color: rgba(255, 255, 255, 0.9); /* Màu nền cho các ô input và button */
+    border: none; /* Bỏ viền */
+    color: #333; /* Màu chữ đậm */
+    margin-bottom: 1rem; /* Khoảng cách giữa các input và button */
+}
+
+#booking-section input[type="text"],
+#booking-section input[type="date"],
+#booking-section input[type="time"],
+#booking-section input[type="number"] {
+    padding: 0.5rem; /* Độ rộng của ô input */
+    width: 100%; /* Độ rộng 100% */
+    border-radius: 5px; /* Bo tròn góc input */
+}
+
+#booking-section button {
+    padding: 1rem 2rem; /* Độ rộng và chiều cao của button */
+    font-size: 1rem; /* Cỡ chữ */
+    cursor: pointer; /* Hình con trỏ khi rê chuột vào button */
+}
+
+#booking-section button:hover {
+    background-color: #FF6633; /* Màu nền khi di chuột vào */
+    color: white; /* Màu chữ khi di chuột vào */
+}        
